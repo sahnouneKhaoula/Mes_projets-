@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<!--
+    <EditText
+        android:id="@+id/EditText_chercherDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/chercher_date"
+        android:inputType="date"
+        android:text=""
+        />
+
+    <EditText
+        android:id="@+id/EditText_chercherNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText_chercherDate"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="@string/chercher_nom"
+        android:inputType="textPersonName"
+        android:text=""
+        />
+
+    <Button
+        android:id="@+id/Button_searchevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText_chercherNom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="chercher"
+        android:text="Chercher"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+
+
+    <ListView
+        android:id="@+id/listedesevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button_searchevent"
+        android:layout_margin="15dp"
+        android:textColor="#FF0000"/>-->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText_chercherDate"
+        android:text="Date"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/noire"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText_chercherNom"
+        android:layout_marginLeft="30dp"
+        android:text="Nom"
+        android:textColor="@color/noire"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/EditText_chercherDate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/chercher_date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/EditText_chercherNom"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/EditText_chercherDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:hint="@string/chercher_nom"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Button_searchevent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/EditText_chercherNom"
+        android:layout_alignStart="@+id/EditText_chercherNom"
+        android:layout_below="@+id/EditText_chercherNom"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/search"
+        android:onClick="chercher" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_below="@id/Button_searchevent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/listedesevent"
+        android:divider="@color/noire"
+        android:dividerHeight="0.5dp"
+        android:scrollbarStyle="insideOverlay"
+        >
+    </ListView>
+    <ImageView
+        android:id="@+id/retour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/listedesevent"
+        android:layout_alignLeft="@+id/EditText_chercherNom"
+        android:layout_alignStart="@+id/EditText_chercherNom"
+        android:background="@drawable/round_button"
+        android:onClick="main"
+        android:src="@drawable/home" />
+
+
+    <ImageView
+        android:layout_above="@+id/listedesevent"
+        android:id="@+id/hom"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/retour"
+        android:background="@drawable/round_button"
+        android:onClick="retour"/>
+
+</RelativeLayout>

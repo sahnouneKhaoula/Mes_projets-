@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<!--
+    <Button
+        android:id="@+id/afficheJ"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@drawable/jour"
+        android:onClick="afficheJ"
+        android:text="Affichage journalier"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+
+    />
+    <Button
+        android:background="@drawable/round_button"
+        android:id="@+id/afficheS"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/afficheP"
+        android:layout_alignStart="@+id/afficheP"
+        android:layout_below="@+id/afficheJ"
+        android:drawableLeft="@drawable/semaine"
+        android:onClick="afficheS"
+        android:text="Affichage hebdomadaire"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/afficheM"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/afficheS"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:backgroundTintMode="add"
+        android:drawableLeft="@drawable/mois"
+        android:onClick="afficheM"
+        android:text="Affichage mensuel"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/afficheA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/afficheS"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@drawable/annee"
+        android:onClick="afficheA"
+        android:text="Affichage annuel"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/afficheSO"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/afficheM"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@drawable/shopping1"
+        android:onClick="afficheSO"
+        android:text="Shopping"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
+    <Button
+        android:background="@drawable/round_button"
+        android:id="@+id/afficheP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/prise_medicament1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/afficheA"
+        android:layout_marginTop="20dp"
+        android:onClick="afficheP"
+        android:text="Prise_Medicament"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+    <Button
+        android:background="@drawable/round_button"
+        android:id="@+id/afficheSP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/afficheSO"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/sport1"
+        android:onClick="afficheSP"
+        android:text="Sport"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/afficheTV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/afficheP"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@drawable/programmetv"
+        android:onClick="afficheTV"
+        android:text="Programme_TV"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
+    <Button
+        android:background="@drawable/round_button"
+        android:id="@+id/afficheAN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/afficheTV"
+        android:onClick="afficheAN"
+        android:drawableLeft="@drawable/anniversaire1"
+        android:text="Anniversaire"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textAlignment="center"
+       />
+    <Button
+        android:layout_marginTop="0dp"
+        android:id="@+id/afficheRE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/afficheRu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@drawable/rencontre1"
+        android:onClick="afficheRE"
+        android:text="Rencontre"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/afficheRu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/afficheAN"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@drawable/reunion1"
+        android:onClick="afficheRu"
+        android:text="Reunion"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/calendrier"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/afficheRE"
+        android:drawableLeft="@drawable/calendrier"
+        android:onClick="onClick"
+        android:background="@drawable/round_button"
+        android:text="Calendrier"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:id="@+id/hom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/retour"
+        android:background="@drawable/round_button"
+        android:onClick="retour"/>
+    <ImageView
+        android:id="@+id/retour"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       android:background="@drawable/round_button"
+        android:layout_alignTop="@+id/hom"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_toLeftOf="@+id/hom"
+        android:layout_toStartOf="@+id/hom"
+        android:src="@drawable/home"
+        android:onClick="main"/>
+</RelativeLayout>
+
+
+
+
+  <ImageButton
+        android:id="@+id/btn_calendrier"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/btn_pratiquer_sport"
+        android:layout_alignLeft="@+id/btn_pratiquer_sport"
+        android:layout_alignStart="@+id/btn_pratiquer_sport"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/round_button"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/calendrier" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/btn_pratiquer_sport"
+        android:layout_below="@+id/btn_calendrier"
+        android:layout_marginTop="-30dp"
+        android:freezesText="false"
+        android:text="Calendrier"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold"
+        android:layout_alignLeft="@+id/btn_pratiquer_sport"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_prise_médicament"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/btn_rencontre_personne"
+        android:layout_alignStart="@+id/btn_rencontre_personne"
+        android:layout_alignTop="@+id/btn_annee"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_button"
+        android:onClick="afficheP"
+        android:scaleType="fitCenter"
+        android:src="@drawable/prise_medicament" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignEnd="@+id/btn_rencontre_personne"
+        android:layout_below="@+id/btn_prise_médicament"
+        android:layout_marginTop="-30dp"
+        android:freezesText="false"
+        android:text="Médicament"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold" />
+
+    <ImageButton
+        android:id="@+id/btn_programme_tv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_anniversaire"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/programmetv"
+        android:onClick="afficheTV"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/btn_programme_tv"
+        android:layout_toRightOf="@id/btn_shopping"
+        android:freezesText="false"
+        android:text="Programme TV"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold" />
+   <ImageButton
+        android:id="@+id/btn_jour"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_calendrier"
+        android:layout_alignLeft="@+id/btn_pratiquer_sport"
+        android:layout_alignStart="@+id/btn_pratiquer_sport"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_button"
+        android:onClick="afficheJ"
+        android:scaleType="fitCenter"
+        android:src="@drawable/jour" />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/btn_pratiquer_sport"
+        android:layout_below="@+id/btn_jour"
+        android:layout_marginTop="-30dp"
+        android:freezesText="false"
+        android:text="Jour"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold"
+        android:layout_alignLeft="@+id/btn_pratiquer_sport"
+        />
+  <ImageButton
+        android:id="@+id/btn_semaine"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_annee"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toLeftOf="@+id/btn_prise_médicament"
+        android:layout_toRightOf="@+id/btn_shopping"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/semaine"
+        android:onClick="afficheS"
+        android:layout_toStartOf="@+id/btn_prise_médicament"
+        />
+ <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignEnd="@+id/btn_anniversaire"
+        android:layout_below="@+id/btn_semaine"
+        android:layout_marginTop="-30dp"
+        android:text="Semaine"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold"
+        android:id="@+id/textView" />
+  <ImageButton
+           android:id="@+id/btn_mois"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:layout_alignTop="@+id/btn_semaine"
+           android:layout_toEndOf="@+id/btn_semaine"
+           android:layout_toRightOf="@+id/btn_semaine"
+           android:background="@drawable/round_button"
+           android:scaleType="fitCenter"
+           android:src="@drawable/mois"
+           android:onClick="afficheM"/>
+        <TextView
+           android:layout_width="60dp"
+           android:layout_height="15dp"
+           android:layout_alignBaseline="@+id/textView"
+           android:layout_alignBottom="@+id/textView"
+           android:layout_toEndOf="@+id/btn_semaine"
+           android:layout_toRightOf="@+id/btn_semaine"
+           android:text="Mois"
+           android:textAlignment="center"
+           android:textSize="10sp"
+           android:textStyle="italic|bold" />
+
+        <ImageButton
+            android:id="@+id/btn_shopping"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/btn_pratiquer_sport"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/btn_anniversaire"
+            android:background="@drawable/round_button"
+            android:onClick="afficheSO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shopping"/>
+        <TextView
+            android:layout_width="60dp"
+            android:height="15dp"
+            android:layout_below="@+id/btn_shopping"
+            android:layout_alignLeft="@+id/btn_shopping"
+           android:text="Shooping"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"/>
+-
+        <ImageButton
+            android:id="@+id/btn_réunion"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/btn_rencontre_personne"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/btn_programme_tv"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/reunion"
+            android:onClick="afficheRu"
+           />
+     <TextView
+           android:layout_width="60dp"
+           android:layout_height="15dp"
+           android:layout_below="@+id/btn_réunion"
+           android:layout_toRightOf="@id/btn_programme_tv"
+           android:layout_alignStart="@id/btn_réunion"
+           android:layout_marginTop="-30dp"
+           android:text="Réunion"
+           android:textAlignment="center"
+           android:textSize="10sp"
+           android:textStyle="italic|bold" />
+
+</RelativeLayout>-->
+
+
+     <ImageButton
+            android:id="@+id/afficheAN"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/anniversaire"
+            android:onClick="afficheAN"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/afficheAN"
+            android:layout_centerInParent="true"
+            android:freezesText="false"
+            android:text="Anniversaire"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold" />
+
+        <ImageButton
+            android:id="@+id/afficheRE"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_toRightOf="@+id/afficheAN"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rencontre"
+            android:onClick="afficheRE"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/afficheRE"
+            android:layout_below="@+id/afficheAN"
+            android:freezesText="false"
+            android:text="Rencontre"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignLeft="@+id/afficheRE" />
+
+        <ImageButton
+            android:id="@+id/afficheSP"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_toLeftOf="@+id/afficheAN"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sport"
+            android:onClick="afficheSP"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/afficheSP"
+            android:layout_below="@+id/afficheAN"
+            android:freezesText="false"
+            android:text="Sport"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignLeft="@+id/afficheSP" />
+
+
+        <ImageButton
+            android:id="@+id/afficheA"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/afficheAN"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/afficheP"
+            android:layout_toRightOf="@+id/afficheSO"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/annee"
+            android:onClick="afficheA"
+            android:layout_toStartOf="@+id/afficheP" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/afficheA"
+            android:layout_toRightOf="@+id/calendrier"
+            android:layout_alignStart="@id/afficheA"
+            android:layout_marginTop="-30dp"
+            android:text="Année"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignLeft="@id/afficheA" />
+
+
+        <ImageButton
+            android:id="@+id/calendrier"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:layout_above="@+id/afficheSP"
+            android:layout_alignLeft="@+id/afficheSP"
+            android:layout_alignStart="@+id/afficheSP"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/round_button"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calendrier" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/afficheSP"
+            android:layout_below="@+id/calendrier"
+            android:layout_marginTop="-30dp"
+            android:freezesText="false"
+            android:text="Calendrier"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignLeft="@+id/afficheSP"
+            />
+
+        <ImageButton
+            android:id="@+id/afficheP"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/afficheRE"
+            android:layout_alignStart="@+id/afficheRE"
+            android:layout_alignTop="@+id/afficheA"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_button"
+            android:onClick="afficheP"
+            android:scaleType="fitCenter"
+            android:src="@drawable/prise_medicament" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignEnd="@+id/afficheRE"
+            android:layout_below="@+id/afficheP"
+            android:layout_marginTop="-30dp"
+            android:freezesText="false"
+            android:text="Médicament"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignRight="@+id/afficheRE" />
+
+        <ImageButton
+            android:id="@+id/afficheTV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/afficheAN"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/programmetv"
+            android:onClick="afficheTV"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/afficheTV"
+            android:layout_toRightOf="@+id/afficheSO"
+            android:freezesText="false"
+            android:text="Programme TV"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold" />
+        <ImageButton
+            android:id="@+id/afficheJ"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/calendrier"
+            android:layout_alignLeft="@+id/afficheSP"
+            android:layout_alignStart="@+id/afficheSP"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_button"
+            android:onClick="afficheJ"
+            android:scaleType="fitCenter"
+            android:src="@drawable/jour" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/afficheSP"
+            android:layout_below="@+id/afficheJ"
+            android:layout_marginTop="-30dp"
+            android:freezesText="false"
+            android:text="Jour"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignLeft="@+id/afficheSP"
+            />
+        <ImageButton
+            android:id="@+id/afficheS"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/afficheA"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/afficheP"
+            android:layout_toRightOf="@+id/btn_shopping"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/semaine"
+            android:onClick="afficheS"
+            android:layout_toStartOf="@+id/afficheP"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignEnd="@+id/afficheAN"
+            android:layout_below="@+id/afficheS"
+            android:layout_marginTop="-30dp"
+            android:text="Semaine"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignRight="@+id/afficheAN" />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/afficheM"
+            android:layout_above="@+id/afficheP"
+            android:layout_toRightOf="@+id/afficheS"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/mois"
+            android:scaleType="fitCenter"
+            android:onClick="afficheM"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignEnd="@+id/afficheP"
+            android:layout_below="@+id/afficheM"
+            android:layout_marginTop="-30dp"
+            android:text="Mois"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignRight="@+id/afficheP" />
+
+        <ImageButton
+            android:id="@+id/afficheSO"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/afficheSP"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/afficheAN"
+            android:background="@drawable/round_button"
+            android:onClick="afficheSO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shopping" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/afficheSO"
+            android:layout_alignLeft="@+id/afficheSO"
+            android:freezesText="false"
+            android:text="Shooping"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold" />
+        <ImageButton
+            android:id="@+id/afficheRu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/afficheRE"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/afficheTV"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/reunion"
+            android:onClick="afficheRu"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/afficheRu"
+            android:layout_toRightOf="@id/btn_programme_tv"
+            android:layout_alignStart="@+id/afficheRu"
+            android:layout_marginTop="-30dp"
+            android:text="Réunion"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic|bold"
+            android:layout_alignLeft="@+id/afficheRu" />
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:id="@+id/hom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="108dp"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/retour"
+            android:background="@drawable/round_button"
+            android:onClick="retour"/>
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:id="@+id/retour"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:layout_alignTop="@+id/hom"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="81dp"
+            android:layout_toLeftOf="@+id/hom"
+            android:layout_toStartOf="@+id/hom"
+            android:src="@drawable/home"
+            android:onClick="main"/>
+    </RelativeLayout>
+
+
+
+
+
+
+

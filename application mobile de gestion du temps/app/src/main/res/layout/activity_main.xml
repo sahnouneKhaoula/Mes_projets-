@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawabackgraoundrier"
+    android:scaleType="fitCenter">
+
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_add_event"
+        android:text="Ajouter évènement"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/add_event"
+        android:layout_marginTop="100dp"
+        android:onClick="ajouterevent"/>
+
+    />
+    <Button
+        android:layout_marginRight="30dp"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_search_event"
+        android:text="Chercher évènement"
+        android:onClick="chercherevent"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/search_event"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_add_event"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_planning"
+        android:text="Afficher Planning"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/afficher_planning"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_search_event"
+        android:onClick="affichage"
+        android:layout_marginRight="30dp"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_statistiques"
+        android:text="Statistiques"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/statistiques"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/Calendrie"
+        android:layout_marginRight="30dp"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Calendrie"
+        android:text="Calendrier d'evnement"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/calendar"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_planning"
+        android:layout_marginRight="30dp"
+        android:onClick="agenda"
+        />
+
+
+
+</RelativeLayout>-->
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+  >
+
+    <Button
+        android:id="@+id/btn_add_event"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_search_event"
+        android:layout_alignStart="@+id/btn_search_event"
+        android:layout_below="@+id/btn_informations"
+        android:layout_marginTop="55dp"
+        android:drawableLeft="@drawable/add_event"
+        android:onClick="ajouterevent"
+        android:text="Ajouter évènement"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_search_event"
+        android:text="Gérer évènement"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/search_event"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_add_event"
+        android:onClick="chercherevent"
+        />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_planning"
+        android:text="Afficher Planning"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/afficher_planning"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_search_event"
+        android:onClick="affichage"
+        />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_statistiques"
+        android:text="Statistiques"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/statistiques"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_planning"
+        android:onClick="ouvrirstatistiques"
+        />
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/informations"
+        android:onClick="ouvririnformations"
+        android:id="@+id/btn_informations"
+        />
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Gestionnaire de temps</string>
+    <string name="chercher_date">Chercher par date</string>
+    <string name="chercher_nom">Chercher par nom</string>
+    <string name="nom_prod">Saisir le nom du produit</string>
+    <string name="qte_prod">Saisir la quantité du produit</string>
+    <string name="bienvenu" tools:ignore="StringEscaping">Gestionaire de temps est déveleoppé dans le cadre d'un projet de fin d'etude.\nProposé par Mr H.KHEMISSA en Novembre 2017.\nRéalisé par SAHNOUNE Khaoula et ROUABHA Yousra, étudiantes à l'Université des Sciences et de la Technologie Houari Boumediene.
+    </string>
+
+
+
+</resources>

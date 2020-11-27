@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Cliquer sur un bouton pour ajouter un nouvel évènement"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"/>
+
+    <ImageButton
+        android:id="@+id/btn_anniversaire"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/btn_shopping"
+        android:background="@drawable/round_button"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/anniversaire" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/btn_anniversaire"
+        android:layout_centerInParent="true"
+        android:freezesText="false"
+        android:text="Anniversaire"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold"
+        android:id="@+id/textView4" />
+
+    <ImageButton
+        android:id="@+id/btn_rencontre_personne"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/btn_anniversaire"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rencontre"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/btn_rencontre_personne"
+        android:layout_below="@+id/btn_anniversaire"
+        android:freezesText="false"
+        android:text="Rencontre"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold"
+        android:layout_alignLeft="@+id/btn_rencontre_personne" />
+
+    <ImageButton
+        android:id="@+id/btn_pratiquer_sport"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/btn_anniversaire"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sport"
+        android:onClick="onClick"/>
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/btn_pratiquer_sport"
+        android:layout_below="@+id/btn_anniversaire"
+        android:freezesText="false"
+        android:text="Sport"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold"
+        android:layout_alignLeft="@+id/btn_pratiquer_sport"
+        android:id="@+id/textView5" />
+
+
+    <ImageButton
+        android:id="@+id/btn_réunion"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_anniversaire"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toLeftOf="@+id/btn_prise_médicament"
+        android:layout_toRightOf="@+id/btn_shopping"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/reunion"
+        android:onClick="onClick"
+        android:layout_toStartOf="@+id/btn_prise_médicament" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignEnd="@+id/btn_anniversaire"
+        android:layout_alignRight="@+id/btn_anniversaire"
+        android:layout_below="@+id/btn_réunion"
+        android:layout_marginTop="-30dp"
+        android:text="Réunion"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold" />
+
+    <ImageButton
+        android:id="@+id/btn_shopping"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_pratiquer_sport"
+        android:layout_alignLeft="@+id/btn_pratiquer_sport"
+        android:layout_alignStart="@+id/btn_pratiquer_sport"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_button"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shopping" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/btn_pratiquer_sport"
+        android:layout_below="@+id/btn_réunion"
+        android:layout_marginTop="-30dp"
+        android:freezesText="false"
+        android:text="Shooping"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold"
+        android:layout_alignLeft="@+id/btn_pratiquer_sport"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/btn_prise_médicament"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/btn_rencontre_personne"
+        android:layout_alignStart="@+id/btn_rencontre_personne"
+        android:layout_alignTop="@+id/btn_réunion"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_button"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/prise_medicament"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignEnd="@+id/btn_rencontre_personne"
+        android:layout_alignRight="@+id/btn_anniversaire"
+        android:layout_below="@+id/btn_prise_médicament"
+        android:layout_marginTop="-30dp"
+        android:freezesText="false"
+        android:text="Médicament"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold" />
+
+    <ImageButton
+        android:id="@+id/btn_programme_tv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_button"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/programmetv" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@+id/btn_programme_tv"
+        android:layout_alignStart="@+id/btn_programme_tv"
+        android:layout_below="@+id/btn_programme_tv"
+        android:freezesText="false"
+        android:text="Programme TV"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="italic|bold" />
+    <ImageView
+        android:id="@+id/hom"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/retour"
+        android:background="@drawable/round_button"
+        android:onClick="retour"/>
+    <ImageView
+        android:id="@+id/retour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_button"
+        android:layout_alignTop="@+id/hom"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="81dp"
+        android:layout_toLeftOf="@+id/hom"
+        android:layout_toStartOf="@+id/hom"
+        android:src="@drawable/home"
+        android:onClick="main"/>
+
+</RelativeLayout>

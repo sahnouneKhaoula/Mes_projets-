@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/jo" android:title="AffichageJournalie" android:icon="@android:drawable/ic_menu_today" />
+    <item android:id="@+id/se" android:title="Affichage Semaine " android:icon="@android:drawable/ic_menu_week" />
+    <item android:id="@+id/mo" android:title="Affichage mensuel " android:icon="@android:drawable/ic_menu_month" />
+    <item android:id="@+id/an" android:title="Affichage Annuel" android:icon="@android:drawable/ic_menu_day" />/>
+    <item android:id="@+id/sh" android:title="Shoping" android:icon="@drawable/shopping"/>
+    <item android:id="@+id/activities" android:title="Programe_Tv" android:icon="@drawable/programmetv"  />
+    <item android:id="@+id/sport" android:title="Sport" android:icon="@drawable/sport" />
+    <item android:id="@+id/anniv" android:title="Anniversaire" android:icon="@drawable/anniversaire" />
+
+</menu>

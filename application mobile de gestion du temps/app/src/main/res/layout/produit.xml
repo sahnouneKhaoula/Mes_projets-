@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <TextView
+        android:id="@+id/txt_nom_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:text="Nom"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="italic|bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp" />
+
+    <TextView
+        android:id="@+id/txt_qte_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txt_nom_prod"
+        android:layout_marginTop="82dp"
+        android:text="Quantité"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        android:layout_alignLeft="@+id/txt_nom_prod" />
+
+    <EditText
+        android:id="@+id/edit_nom_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/txt_nom_prod"
+        android:hint="@string/nom_prod" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_qte_prod"
+        android:layout_below="@id/edit_nom_prod"
+        android:layout_alignParentRight="true"
+        android:hint="@string/qte_prod"
+        android:layout_margin="12dp"
+        android:id="@+id/edit_qte_prod"/>
+
+    <TextView
+        android:id="@+id/txt_liste_achat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txt_nom_prod"
+        android:layout_marginTop="144dp"
+        android:text="Liste d'achat"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="italic|bold"
+        android:layout_alignLeft="@+id/txt_nom_prod" />
+
+    <ListView
+        android:cacheColorHint="@color/colorPrimary"
+        android:id="@+id/listproduit"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/terminer"
+        ></ListView>
+
+    <Button
+        android:id="@+id/btn_ajouter_prod"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_qte_prod"
+        android:layout_alignRight="@+id/edit_qte_prod"
+        android:layout_below="@+id/edit_qte_prod"
+        android:onClick="insererP"
+        android:text="Ajouter"
+        android:textColor="@color/colorPrimary"
+        android:drawableLeft="@drawable/add_event"
+        />
+
+
+    <Button
+        android:id="@+id/terminer"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_ajouter_prod"
+        android:text="Terminer"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/btn_ajouter_prod"
+        android:onClick="terminer"
+        android:drawableLeft="@drawable/valider"
+        />
+</RelativeLayout>

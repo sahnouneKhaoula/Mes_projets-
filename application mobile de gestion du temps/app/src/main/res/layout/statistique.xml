@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/background">
+    <Button
+        android:id="@+id/statJour"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_search_event"
+        android:layout_alignStart="@+id/btn_search_event"
+        android:layout_below="@+id/btn_informations"
+        android:layout_marginTop="55dp"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/statistiques"
+        android:onClick="jour"
+        android:text="Statistiques du Jour"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_search_event"
+        android:text="Statistiques du semaine"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/statistiques"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/statJour"
+        android:onClick="chercherevent"
+        />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_planning"
+        android:text="Statistiques du mois"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/statistiques"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_search_event"
+        android:onClick="statmois"
+        />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_statistiques"
+        android:text="Statistiques Annuelles"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/statistiques"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_planning"
+        android:onClick="annuels"
+        />
+    <ImageView
+        android:id="@+id/hom"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/btn_statistiques"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btn_statistiques"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:background="@drawable/round_button"
+        android:onClick="retour"
+        android:src="@drawable/retour" />
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:id="@+id/retour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_button"
+        android:layout_alignTop="@+id/hom"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="81dp"
+        android:layout_toLeftOf="@+id/hom"
+        android:layout_toStartOf="@+id/hom"
+        android:src="@drawable/home"
+        android:onClick="main"/>
+
+</RelativeLayout>
+

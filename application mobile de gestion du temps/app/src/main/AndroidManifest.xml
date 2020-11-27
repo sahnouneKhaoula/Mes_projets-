@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.khaoula.gestionairedetemps">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SupprimetEvent" />
+        <activity android:name=".Cherchevent" />
+        <activity android:name=".AfficheJour" />
+        <activity android:name=".Prise_Medicament" />
+        <activity android:name=".Shopping"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Anniv_Prog_Sport" />
+        <activity android:name=".Reunion_Rencontre" />
+        <activity android:name=".Button_Event" />
+        <activity android:name=".affichage" />
+        <activity android:name=".Agendat" />
+        <activity android:name=".AffichageCategor" />
+        <activity android:name=".AfficheAnne" />
+        <activity android:name=".AfficheH" />
+        <activity android:name=".AfficheListe" />
+        <activity android:name=".autre"/>
+        <activity android:name=".affiche2"/>
+        <activity android:name=".ShopingA"/>
+        <activity android:name=".Notification"/>
+        <activity android:name=".Informations"></activity>
+        <activity android:name=".Statistiques"/>
+        <activity android:name=".mois"/>
+        <activity android:name=".annee"/>
+      <activity android:name=".Semaine"/>
+        <receiver android:name=".AlertReceiver"></receiver>
+
+
+    </application>
+
+</manifest>

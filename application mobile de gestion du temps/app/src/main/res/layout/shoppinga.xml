@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <Button
+        android:id="@+id/ajout_event"
+        android:onClick="Mdifier"
+        android:layout_marginBottom="0dp"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Modifier"
+        android:textSize="10sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"
+        android:drawableLeft="@drawable/modifier"
+        />
+    <Button
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="2.5dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/annuler_modif_event"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Annuler"
+        android:textSize="10sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"
+        android:onClick="annuler"
+        android:drawableLeft="@drawable/annuler"/>
+    <Button
+        android:layout_marginBottom="0dp"
+        android:layout_toLeftOf="@id/annuler_modif_event"
+        android:id="@+id/supp_event"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Supprimer"
+        android:textSize="10sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"
+        android:onClick="Spprimer"
+        android:drawableLeft="@drawable/supprimer"/>
+
+
+    <TextView
+
+        android:id="@+id/titre_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date_event"
+        android:layout_alignLeft="@+id/date_event"
+        android:layout_alignStart="@+id/date_event"
+        android:text="Titre"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/editText_Titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/titre_event"
+        android:inputType="textPersonName"
+        android:text=""/>
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/date_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_time"
+        android:layout_alignLeft="@+id/time_event"
+        android:layout_alignStart="@+id/time_event"
+        android:text="Date"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/time_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Heur"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/editText_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editText_Titre"
+        android:layout_toRightOf="@id/date_event"
+        android:inputType="date"
+        android:text=""
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/editText_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editText_date"
+        android:layout_toRightOf="@id/time_event"
+        android:inputType="time"
+        android:text=""
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/description_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/time_event"
+        android:layout_marginTop="12dp"
+        android:text="Description"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/critique_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/description_event"
+        android:layout_marginTop="12dp"
+        android:text="Critique"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/répéter_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/critique_event"
+        android:layout_marginTop="12dp"
+        android:text="Répéter"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/editText_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/time_event"
+        android:layout_toRightOf="@id/description_event"
+        android:inputType="textMultiLine"/>
+
+    <Spinner
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/editText_répéter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/critique_event"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/rep" />
+    <TextView
+        android:id="@+id/rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/critique_event"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/répéter_event"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/répéter_event"
+        />
+
+    <Switch
+        android:textOn="oui"
+        android:textOff="non"
+        android:id="@+id/switch_critique_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/critique_event"
+        android:layout_alignBottom="@+id/critique_event"
+        android:layout_alignLeft="@+id/editText_description"
+        android:layout_alignStart="@+id/editText_description"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/qte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_répéter"
+        android:text="Catégorie"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic|bold" />
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_répéter"
+        android:layout_toRightOf="@id/qte"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/editText_cate"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/statut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/qte"
+        android:text="Statut"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic|bold" />
+    <TextView
+        android:id="@+id/editText_statut"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_cate"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/statut"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/statut"
+        />
+    <Spinner
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editText_cate"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/editText_statut" />
+    <Button
+        android:id="@+id/qte2"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_Titre"
+        android:layout_alignStart="@+id/editText_Titre"
+        android:layout_below="@+id/statut"
+        android:layout_marginTop="11dp"
+        android:onClick="aaa"
+        android:text="Afficher les produit"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <ListView
+        android:id="@+id/listproduit"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/qte2"
+        android:cacheColorHint="@color/colorPrimary"></ListView>
+
+
+</RelativeLayout>

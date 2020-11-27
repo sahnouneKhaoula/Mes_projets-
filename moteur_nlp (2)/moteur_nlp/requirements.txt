@@ -1,0 +1,6 @@
+pytorch==1.5.1
+numpy==1.19.1
+pandas==1.0.5
+spacy==2.3.2
+python==3.7.7
+fasttext

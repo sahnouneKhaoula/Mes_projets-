@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:layout_above="@+id/hom"
+        >
+
+        <ListView
+            android:id="@+id/listedeseventparjour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alwaysDrawnWithCache="true"
+            android:animateLayoutChanges="false"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:textColor="@color/noire"
+            android:textStyle="bold|italic"
+            android:divider="@color/noire"
+            android:dividerHeight="0.5dp"
+            android:scrollbarStyle="outsideInset"
+            /></LinearLayout>
+    <ImageView
+        android:id="@+id/hom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/round_button"
+        android:onClick="retour"
+        android:src="@drawable/retour" />
+    <ImageView
+        android:id="@+id/retour"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round_button"
+        android:onClick="main"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/line1"
+        android:layout_toEndOf="@+id/retour"
+        android:layout_toRightOf="@+id/retour"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>
